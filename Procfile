@@ -1,0 +1,1 @@
+web: gunicorn Lasertec.wsgi --log-file -

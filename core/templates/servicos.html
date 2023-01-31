@@ -1,0 +1,25 @@
+{% load static %}
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="row">
+
+<!--                <div class="col-md-6 features-leftcol wp2" alt="{{ s.lado }}">-->
+<!--                  <h1>{{ s.servico }}</h1>-->
+<!--                  <p class="margin-bottom">{{ s.descricao }}</p>-->
+<!--                </div>-->
+<!--            -->
+
+              <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+                {% for s in servicos %}
+                  <div style="flex: 40%">
+                    <h1>{{ s.servico }}</h1>
+                    <p class="margin-bottom">{{ s.descricao }}</p>
+                  </div>
+                {% endfor %}
+              </div>
+
+
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,22 @@
+{% load static %}
+
+      <section class="testimonials" id="media">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div id="firstSlider">
+                <ul class="slides">
+
+                  {% for m in media %}
+                    <li>
+                      <div class="avatar"><img src="{{ m.imagem.thumb.url }}" alt="{{ m.nome }}"></div>
+                      <h1>{{ m.texto }}</h1>
+                    </li>
+                  {% endfor %}
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

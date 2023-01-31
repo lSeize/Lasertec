@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<title>Error 500</title>
+    <section class="hero" id="hero">
+        <div class="container">
+          <div class="row">
+
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h1 class="animated bounceInDown" style="color:#FFFFFF"><b>Error 500</b></h1>
+              <a href="{% url 'index' %}" class="animated fadeInUpDelay" style="color:#FFFFFF"><b>Volte para a pagina principal. </b></a>
+            </div>
+          </div>
+        </div>
+    </section>
+{% endblock %}

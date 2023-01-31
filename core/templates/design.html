@@ -1,0 +1,55 @@
+{% load static %}
+
+      <section class="design" id="design">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="secondSlider">
+                <ul class="slides">
+
+                  <li>
+                    {% for d in design %}
+                      {% if d.slide == 'primeiro' %}
+                        <div class="col-md-4 features-leftcol wp2">
+                          <div class="flat-box">
+                            <div><img src="{{ d.imagem.thumb.url }}" alt="{{ d.slide }}"></div>
+                            <p class="title">{{ d.servico }}</p>
+                            <p class="feature-text">{{ d.descricao }}</p>
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                    <div class="col-md-4 design-content">
+                      <h1>Serviço prestado</h1>
+                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    {% for d in design %}
+                      {% if d.slide == 'segundo' %}
+                        <div class="col-md-4 features-leftcol wp2">
+                          <div class="flat-box">
+                            <div><img src="{{ d.imagem.thumb.url }}" alt="{{ d.slide }}"></div>
+                            <p class="title">{{ d.servico }}</p>
+                            <p class="feature-text">{{ d.descricao }}</p>
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                    <div class="col-md-4 design-content">
+                      <h1>Serviço prestado</h1>
+                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col-md-1 col-md-offset-11 text-right controls">
+                <a href="prev" class="prev"><i class="fa fa-angle-left fa-3x"></i></a>
+                <a href="next" class="next"><i class="fa fa-angle-right fa-3x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

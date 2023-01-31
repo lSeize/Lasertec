@@ -1,0 +1,18 @@
+{% load static %}
+
+      <section class="download-now" id="descricao">
+        <div class="container">
+          <div class="row">
+
+            {% for d in descricao %}
+
+            <div class="col-md-8 wp1">
+              <h1>{{ d.titulo }}</h1>
+              <p>{{ d.sub_titulo }}</p>
+              <p>{{ d.descricao }}</p>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+      </section>
