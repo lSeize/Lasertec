@@ -157,6 +157,6 @@ DEFAULT_FROM_EMAIL = 'contato@email'
 LOGOUT_REDIRECT_URL = 'index'
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-ce3f.up.railway.app/',
     'https://www.web-production-ce3f.up.railway.app/',
+    'https://web-production-ce3f.up.railway.app/',
 ]
