@@ -164,4 +164,6 @@ LOGOUT_REDIRECT_URL = 'index'
 CSRF_TRUSTED_ORIGINS = [
     'https://www.web-production-ce3f.up.railway.app/',
     'https://web-production-ce3f.up.railway.app/',
+    'http://www.web-production-ce3f.up.railway.app/',
+    'http://web-production-ce3f.up.railway.app/',
 ]

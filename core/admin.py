@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.views.decorators.csrf import csrf_exempt
 
 from .models import Design, Servico, Descricao, Media
 
@@ -21,3 +22,7 @@ class DescricaoAdmin(admin.ModelAdmin):
 @admin.register(Media)
 class MediaAdmin(admin.ModelAdmin):
     list_display = ('nome', 'texto', 'imagem', 'modificado')
+
+
+@csrf_exempt
+def login(): pass
